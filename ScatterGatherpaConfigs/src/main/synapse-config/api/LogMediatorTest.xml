@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/logtest" name="LogMediatorTest" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET">
+        <inSequence>
+            <log description="lgo1" level="full">
+                <property name="Iam" value="================ FTP log"/>
+            </log>
+            <respond description="res1"/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

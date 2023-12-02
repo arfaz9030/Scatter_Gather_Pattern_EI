@@ -1,0 +1,11 @@
+---
+key: "LogMediatorTest-1.0.0"
+name : "LogMediatorTest"
+displayName : "LogMediatorTest"
+description: "Sample API"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/logtest"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
+apiId : "null"

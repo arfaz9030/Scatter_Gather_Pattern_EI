@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/itterate-mediator-test" name="ItterateMediator" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST">
+        <inSequence>
+            <log level="full"/>
+            <iterate attachPath="json-eval($.users)" expression="json-eval($.users)" id="iterate-over-users" preservePayload="true">
+                <target>
+                    <sequence>
+                        <log description="lgo2" level="full">
+                            <property name="Iam Itterator" value="================ itterator log"/>
+                        </log>
+                        <send>
+                            <endpoint>
+                                <http method="get" uri-template="https://dummyjson.com/products/1">
+                                    <suspendOnFailure>
+                                        <initialDuration>-1</initialDuration>
+                                        <progressionFactor>1</progressionFactor>
+                                    </suspendOnFailure>
+                                    <markForSuspension>
+                                        <retriesBeforeSuspension>0</retriesBeforeSuspension>
+                                    </markForSuspension>
+                                </http>
+                            </endpoint>
+                        </send>
+                    </sequence>
+                </target>
+            </iterate>
+        </inSequence>
+        <outSequence>
+            <aggregate id="iterate-over-users">
+                <completeCondition>
+                    <messageCount max="-1" min="-1"/>
+                </completeCondition>
+                <onComplete aggregateElementType="root" expression="json-eval($)">
+                    <log level="full"/>
+                    <respond/>
+                </onComplete>
+            </aggregate>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

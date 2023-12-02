@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/cloneAPI" name="Clone" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST">
+        <inSequence>
+            <log description="mediator"/>
+            <property description="Get" name="DSS" scope="default" type="STRING" value=""/>
+            <clone>
+                <target>
+                    <sequence>
+                        <property name="id" scope="default" type="STRING" value=""/>
+                    </sequence>
+                </target>
+            </clone>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

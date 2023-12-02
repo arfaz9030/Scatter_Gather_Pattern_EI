@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="Clone" groupId="com.scatter.gather.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/Clone.xml</file>
+    </artifact>
+    <artifact name="Clone_swagger" groupId="com.scatter.gather.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/Clone_swagger.yaml</file>
+    </artifact>
+    <artifact name="Clone_metadata" groupId="com.scatter.gather.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/Clone_metadata.yaml</file>
+    </artifact>
+    <artifact name="Employees_Itterate_Mediator" groupId="com.scatter.gather.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/Employees_Itterate_Mediator.xml</file>
+    </artifact>
+    <artifact name="CloneAPI_swagger" groupId="com.scatter.gather.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/CloneAPI_swagger.yaml</file>
+    </artifact>
+    <artifact name="CloneAPI_metadata" groupId="com.scatter.gather.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/CloneAPI_metadata.yaml</file>
+    </artifact>
+    <artifact name="LogMediatorTest" groupId="com.scatter.gather.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/LogMediatorTest.xml</file>
+    </artifact>
+    <artifact name="LogMediatorTest_swagger" groupId="com.scatter.gather.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/LogMediatorTest_swagger.yaml</file>
+    </artifact>
+    <artifact name="LogMediatorTest_metadata" groupId="com.scatter.gather.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/LogMediatorTest_metadata.yaml</file>
+    </artifact>
+    <artifact name="ItterateMediator" groupId="com.scatter.gather.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/ItterateMediator.xml</file>
+    </artifact>
+    <artifact name="ItterateMediator_swagger" groupId="com.scatter.gather.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/ItterateMediator_swagger.yaml</file>
+    </artifact>
+    <artifact name="ItterateMediator_metadata" groupId="com.scatter.gather.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/ItterateMediator_metadata.yaml</file>
+    </artifact>
+</artifacts>

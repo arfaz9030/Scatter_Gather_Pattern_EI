@@ -1,0 +1,13 @@
+openapi: 3.0.1
+info:
+  title: ItterateMediator
+  description: API Definition of ItterateMediator
+  version: 1.0.0
+servers:
+- url: http://localhost:8290/itterate-mediator-test
+paths:
+  /:
+    post:
+      responses:
+        default:
+          description: Default response
